@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# 🎯 Brainrot - Knowledge Quiz Application
 
 ## Project info
+Brainrot is a fast, responsive, and interactive quiz web application built using **React + Vite**. The goal is to challenge users with multiple-choice questions while maintaining a clean and intuitive user interface.
 
-**URL**: https://lovable.dev/projects/ba79c2f7-3a4f-49df-9bdd-d449c36fc67e
+## 🔗 Live Demo
 
-## How can I edit this code?
+**GitHub Pages:** [https://kriti-0033.github.io/Brainrot_app](https://kriti-0033.github.io/Brainrot_app)
+- **Vercel:** [https://brainrot-app.vercel.app](https://brainrot-app.vercel.app) 
 
-There are several ways of editing your application.
+**🧠 Features**
 
-**Use Lovable**
+- Clean and responsive UI with modern design
+- Timer-based question answering (optional)
+- Displays correct and wrong answers
+- Final score summary
+- Mobile-friendly layout
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ba79c2f7-3a4f-49df-9bdd-d449c36fc67e) and start prompting.
+**⚙️ Tech Stack**
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend:** React, Vite, TypeScript, TailwindCSS
+- **Hosting:** GitHub Pages & Vercel
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Install Dependies:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2:npm run dev
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: npm run build [Build for production, only when you want to deploy it through github]
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Step 4: npm run deploy
 ```
 
-**Edit a file directly in GitHub**
+**Assumptions Made**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Each quiz question is multiple choice.
+- No backened/database is used- questions are stored locally.
+- The user plays the quiz in one session (no login or session tracking)
 
-**Use GitHub Codespaces**
+**⚠️Challenges Faced**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Blank screen on GitHub Pages
+Cause: Missing base path in vite.config.ts
 
-## What technologies are used for this project?
+Fix: Added base: "/Brainrot_app/" to Vite config
 
-This project is built with:
+2. gh-pages deployment errors
+Cause: Using default build/ instead of dist/ in Vite
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Fix: Changed deploy script to gh-pages -d dist
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/ba79c2f7-3a4f-49df-9bdd-d449c36fc67e) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 License
 
-Yes, you can!
+This project is open source and free to use.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MADE BY **Kriti Gaur**
